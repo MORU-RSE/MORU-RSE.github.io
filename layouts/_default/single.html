@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+<div class="page-hero">
+  <div class="container page-hero-content">
+    <p class="page-hero-breadcrumb">
+      <a href="/">Home</a> / {{ .Section | title }} / {{ .Title }}
+    </p>
+    <h1 class="page-hero-title">{{ .Title }}</h1>
+    {{ with .Params.description }}
+    <p class="page-hero-desc">{{ . }}</p>
+    {{ end }}
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="container">
+    <article class="prose">
+      {{ .Content }}
+    </article>
+
+    <aside class="sidebar">
+      <!-- Date -->
+      {{ if not .Date.IsZero }}
+      <div class="sidebar-card">
+        <p class="sidebar-card-title">Published</p>
+        <p style="font-size:.875rem; color: var(--text-secondary);">
+          {{ .Date.Format "2 January 2006" }}
+        </p>
+      </div>
+      {{ end }}
+
+      <!-- Tags -->
+      {{ with .Params.tags }}
+      <div class="sidebar-card">
+        <p class="sidebar-card-title">Tags</p>
+        <div style="display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.25rem;">
+          {{ range . }}
+          <a href="/tags/{{ . | urlize }}/"
+             style="font-size:.75rem; font-family:var(--font-mono); background:var(--oxford-blue); color:#fff; padding:.25rem .65rem; border-radius:99px; letter-spacing:.04em;">
+            {{ . }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      <!-- Related -->
+      {{ $related := .Site.RegularPages.Related . | first 3 }}
+      {{ if $related }}
+      <div class="sidebar-card">
+        <p class="sidebar-card-title">Related</p>
+        <ul style="display:flex; flex-direction:column; gap:.75rem;">
+          {{ range $related }}
+          <li>
+            <a href="{{ .Permalink }}"
+               style="font-size:.85rem; color:var(--oxford-mid); line-height:1.4; display:block;">
+              {{ .Title }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </aside>
+  </div>
+</div>
+
+{{ end }}

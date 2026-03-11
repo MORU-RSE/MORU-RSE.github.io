@@ -1,0 +1,257 @@
+{{ define "main" }}
+
+<!-- HERO CAROUSEL -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-track">
+    {{ range .Site.Data.hero_slides }}
+    <div class="hero-slide">
+      <div class="hero-slide-bg" style="background-image: url('{{ .image }}')"></div>
+      <div class="hero-slide-content">
+        <p class="hero-slide-tag">{{ .tag }}</p>
+        <h2 class="hero-slide-title">{{ .title }}</h2>
+        <p class="hero-slide-desc">{{ .description }}</p>
+        <div class="hero-slide-actions">
+          {{ if .cta_primary }}
+          <a href="{{ .cta_primary.url }}" class="btn btn-primary">
+            {{ .cta_primary.label }}
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          {{ end }}
+          {{ if .cta_secondary }}
+          <a href="{{ .cta_secondary.url }}" class="btn btn-ghost">{{ .cta_secondary.label }}</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  <div class="hero-controls">
+    <div class="hero-dots">
+      {{ range $i, $_ := .Site.Data.hero_slides }}
+      <button class="hero-dot{{ if eq $i 0 }} active{{ end }}" aria-label="Slide {{ add $i 1 }}"></button>
+      {{ end }}
+    </div>
+    <div class="hero-arrows">
+      <button class="hero-arrow hero-arrow-prev" aria-label="Previous">&#8592;</button>
+      <button class="hero-arrow hero-arrow-next" aria-label="Next">&#8594;</button>
+    </div>
+  </div>
+  <div class="hero-progress"></div>
+</section>
+
+
+<!-- QUICK LINKS -->
+<div class="quick-links">
+  <div class="container">
+    <div class="quick-links-inner">
+      <a class="quick-link-item" href="/work-with-us/">
+        <div class="quick-link-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="quick-link-text">
+          <strong>Work With Us</strong>
+          <span>Collaborate on your research</span>
+        </div>
+      </a>
+      <a class="quick-link-item" href="/projects/">
+        <div class="quick-link-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        </div>
+        <div class="quick-link-text">
+          <strong>Projects</strong>
+          <span>See what we've built</span>
+        </div>
+      </a>
+      <a class="quick-link-item" href="/people/">
+        <div class="quick-link-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div class="quick-link-text">
+          <strong>Our Team</strong>
+          <span>Meet the engineers</span>
+        </div>
+      </a>
+      <a class="quick-link-item" href="/training/">
+        <div class="quick-link-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div class="quick-link-text">
+          <strong>Training</strong>
+          <span>Workshops &amp; resources</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+  <div class="container">
+    <div class="about-grid fade-up">
+      <div class="about-text">
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-title">A New RSE Team at the Heart of MORU</h2>
+        <p class="about-desc">
+          The MORU RSE Group is a research software engineering team embedded within the
+          <a href="https://www.tropmedres.ac/" target="_blank" rel="noopener">Mahidol Oxford Tropical Medicine Research Unit</a>.
+          We work alongside scientists and clinicians to design, develop, and maintain the software
+          that underpins modern tropical medicine research.
+        </p>
+        <p class="about-desc">
+          We are a young team — but that means we bring fresh perspectives, modern practices,
+          and genuine enthusiasm to every project we take on. From day one, we are committed to
+          writing software that is open, reproducible, and built to last.
+        </p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div>
+              <strong>Software Engineering</strong>
+              <span>Clean, tested, maintainable code</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <strong>Reproducibility</strong>
+              <span>Open science from the ground up</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div>
+              <strong>Global Health Impact</strong>
+              <span>Software that serves researchers worldwide</span>
+            </div>
+          </div>
+        </div>
+        <a href="/work-with-us/" class="btn btn-primary" style="margin-top:1.5rem;">
+          Learn How We Work
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="about-visual">
+        <div class="about-card-stack">
+          <div class="about-card about-card-1">
+            <p class="about-card-label">What We Build</p>
+            <ul class="about-card-list">
+              <li>Data pipelines &amp; analysis tools</li>
+              <li>Clinical trial systems</li>
+              <li>Web &amp; mobile platforms</li>
+              <li>Research reproducibility tooling</li>
+              <li>Code review &amp; consultancy</li>
+            </ul>
+          </div>
+          <div class="about-card about-card-2">
+            <p class="about-card-label">We Work With</p>
+            <ul class="about-card-list">
+              <li>Epidemiologists &amp; clinicians</li>
+              <li>Data scientists</li>
+              <li>Lab &amp; field researchers</li>
+              <li>Grant-funded projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TEAM PREVIEW -->
+{{ $people := where .Site.RegularPages "Section" "people" }}
+{{ if $people }}
+<section class="team-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-header-left">
+        <p class="section-label">The Team</p>
+        <h2 class="section-title">Meet the Engineers</h2>
+        <p class="section-desc">A small but capable team, bringing together expertise in scientific computing, data engineering, and software development.</p>
+      </div>
+      <a href="/people/" class="btn btn-outline">View All</a>
+    </div>
+    <div class="team-grid">
+      {{ range first 4 $people }}
+      <a class="team-card" href="{{ .Permalink }}">
+        <div class="team-card-avatar">
+          {{ if .Params.image }}
+          <img src="{{ .Params.image }}" alt="{{ .Title }}">
+          {{ else }}
+          <div class="team-card-avatar-placeholder">{{ substr .Title 0 1 }}</div>
+          {{ end }}
+        </div>
+        <div class="team-card-info">
+          <strong>{{ .Title }}</strong>
+          <span>{{ .Params.role | default "Research Software Engineer" }}</span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- PROJECTS (only renders if content exists) -->
+{{ $projects := where .Site.RegularPages "Section" "projects" }}
+{{ if $projects }}
+<section class="projects-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-header-left">
+        <p class="section-label">Our Work</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Early projects that show what we can do — more to come.</p>
+      </div>
+      <a href="/projects/" class="btn btn-outline">All Projects</a>
+    </div>
+    <div class="projects-grid">
+      {{ $featured := first 3 (where $projects ".Params.featured" true) }}
+      {{ if not $featured }}{{ $featured = first 3 $projects }}{{ end }}
+      {{ range $featured }}
+      <a class="project-card" href="{{ .Permalink }}">
+        <div class="project-card-bg" style="background-image: url('{{ .Params.image | default "/images/project-default.jpg" }}')"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-content">
+          <p class="project-card-tag">{{ .Params.category | default "Project" }}</p>
+          <h3 class="project-card-title">{{ .Title }}</h3>
+          <p class="project-card-desc">{{ .Params.summary | default .Summary }}</p>
+        </div>
+        <div class="project-card-arrow">&#8594;</div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner-inner fade-up">
+      <div class="cta-banner-text">
+        <h2>Ready to build something together?</h2>
+        <p>We're open to collaborations at any stage — from grant applications to active projects and code reviews.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a href="/contact/" class="btn btn-primary">
+          Get in Touch
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="/work-with-us/" class="btn btn-ghost-dark">How We Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

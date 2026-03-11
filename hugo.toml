@@ -1,3 +1,61 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Project'
+baseURL       = "/"
+languageCode  = "en-gb"
+title         = "RSE Group"
+paginate      = 10
+enableRobotsTXT = true
+
+[params]
+  shortName   = "MORU RSE Group"
+  navSubtitle = "Research Software Engineering"
+  description = "We partner with researchers to build robust, maintainable, and reproducible research software."
+  footerDesc  = "We partner with researchers to build robust, maintainable, and reproducible research software."
+
+  # Social links
+  github   = "https://github.com/MORU-RSE"
+  website = "https://www.tropmedres.ac/"
+  email    = "tanaphum@tropmedres.ac"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true   # Allow raw HTML in markdown
+  [markup.highlight]
+    style          = "monokai"
+    lineNos        = false
+    codeFences     = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
+# ── Main Navigation ────────────────────────────────────────────
+[[menus.main]]
+  name   = "Home"
+  url    = "/"
+  weight = 1
+
+[[menus.main]]
+  name   = "Work With Us"
+  url    = "/work-with-us/"
+  weight = 2
+
+
+[[menus.main]]
+  name   = "Projects"
+  url    = "/projects/"
+  weight = 3
+
+[[menus.main]]
+  name   = "Our team"
+  url    = "/people/"
+  weight = 4
+
+[[menus.main]]
+  name   = "Training"
+  url    = "/training/"
+  weight = 5
+
+[[menus.main]]
+  name   = "Contact"
+  url    = "/contact/"
+  weight = 6

@@ -1,0 +1,31 @@
+<nav class="nav">
+  <div class="container nav-inner">
+
+    <!-- Logo -->
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-mark">RSE</div>
+      <div class="nav-logo-text">
+        <strong>{{ .Site.Params.shortName | default .Site.Title }}</strong>
+        <span>{{ .Site.Params.navSubtitle | default "Research Software Engineering" }}</span>
+      </div>
+    </a>
+
+    <!-- Links -->
+    <ul class="nav-links">
+      {{ range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}"
+           {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>
+          {{ .Name }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+
+    <!-- Mobile toggle -->
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>

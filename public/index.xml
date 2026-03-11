@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Project</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Project</description>
+    <title>Home on RSE Group</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content in Home on RSE Group</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 15 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Reproducibility Matters in Research Software</title>
+      <link>//localhost:1313/posts/reproducibility/</link>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/reproducibility/</guid>
+      <description>Reproducible research software isn&amp;rsquo;t just good practice — it&amp;rsquo;s increasingly a requirement for publication. Here&amp;rsquo;s how we approach it.</description>
+    </item>
+    <item>
+      <title>EpiModel — Epidemiological Simulation Platform</title>
+      <link>//localhost:1313/projects/epimodel/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/epimodel/</guid>
+      <description>An open-access platform for infectious disease modelling, providing researchers with real-time case data and reproducible analysis pipelines.</description>
+    </item>
+    <item>
+      <title>BattSim — Battery Simulation Framework</title>
+      <link>//localhost:1313/projects/other-projects/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/other-projects/</guid>
+      <description>A framework for writing and solving systems of differential equations, with a library of battery models and specialised tools for simulation experiments.</description>
+    </item>
+    <item>
+      <title>OceanSim — Fisheries Management Tool</title>
+      <link>//localhost:1313/projects/test/</link>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/test/</guid>
+      <description>An advanced simulation tool designed to help manage fisheries by modelling the behaviour of fishing fleets and their interactions with the marine environment.</description>
+    </item>
   </channel>
 </rss>

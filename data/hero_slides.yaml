@@ -1,0 +1,32 @@
+- tag: "MORU · Mahidol Oxford Tropical Medicine Research Unit"
+  title: "Software Engineering for Global Health Research"
+  description: "We are a new team embedded within MORU, dedicated to building robust, reproducible, and maintainable software that accelerates tropical medicine research."
+  image: "/images/hero/hero-1.jpg"
+  cta_primary:
+    label: "Work With Us"
+    url: "/work-with-us/"
+  cta_secondary:
+    label: "Meet the Team"
+    url: "/people/"
+
+- tag: "What We Do"
+  title: "Turning Research Ideas into Reliable Software"
+  description: "From data pipelines and analysis tools to web platforms and clinical trial systems — we partner with researchers at every stage of the software lifecycle."
+  image: "/images/hero/hero-2.jpg"
+  cta_primary:
+    label: "Our Services"
+    url: "/work-with-us/"
+  cta_secondary:
+    label: "Browse Projects"
+    url: "/projects/"
+
+- tag: "Let's Collaborate"
+  title: "Have a Project in Mind?"
+  description: "Whether you're writing a grant, already funded, or just need a code review — we'd love to hear from you. Reach out and let's build something together."
+  image: "/images/hero/hero-3.jpg"
+  cta_primary:
+    label: "Get in Touch"
+    url: "/contact/"
+  cta_secondary:
+    label: "How We Work"
+    url: "/work-with-us/"
