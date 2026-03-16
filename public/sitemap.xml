@@ -60,5 +60,7 @@
     <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/work-with-us/</loc>
   </url>
 </urlset>

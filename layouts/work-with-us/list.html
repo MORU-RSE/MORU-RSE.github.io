@@ -1,0 +1,286 @@
+{{ define "main" }}
+
+<!-- ══════════════════════════════════════════════════
+     PAGE HERO
+══════════════════════════════════════════════════ -->
+<div class="page-hero">
+  <div class="container page-hero-content">
+    <p class="page-hero-breadcrumb"><a href="/">Home</a> / Work With Us</p>
+    <h1 class="page-hero-title">Work With Us</h1>
+    <p class="page-hero-desc">
+      Whether you're writing a grant, running a funded project, or just need a second pair of eyes on your code —
+      we're here to help. Get in touch and let's figure out the best way to work together.
+    </p>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════
+     HOW WE ENGAGE
+══════════════════════════════════════════════════ -->
+<section class="wwu-engage">
+  <div class="container">
+    <div class="wwu-engage-header fade-up">
+      <p class="section-label">Ways to Collaborate</p>
+      <h2 class="section-title">How We Can Work Together</h2>
+      <p class="section-desc">
+        We engage with research teams at any stage of the project lifecycle.
+        Here are the three most common ways researchers work with us.
+      </p>
+    </div>
+
+    <div class="wwu-engage-grid fade-up">
+
+      <div class="wwu-engage-card">
+        <div class="wwu-engage-card-num">01</div>
+        <div class="wwu-engage-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10 9 9 9 8 9"/>
+          </svg>
+        </div>
+        <h3>Grant Applications</h3>
+        <p>
+          Involved early, we can help design the software component of your grant —
+          advising on architecture, estimating costs, and writing the software management plan.
+          A strong software case can meaningfully strengthen a proposal.
+        </p>
+        <a href="/contact/?type=grant" class="wwu-engage-link">
+          Talk to us about your grant
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="wwu-engage-card wwu-engage-card--featured">
+        <div class="wwu-engage-card-num">02</div>
+        <div class="wwu-engage-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+          </svg>
+        </div>
+        <h3>Funded Projects</h3>
+        <p>
+          Our most common engagement. Once your project is funded, we embed with your team
+          to design, build, test, and maintain the software. We work iteratively and keep
+          researchers in the loop throughout.
+        </p>
+        <a href="/contact/?type=project" class="wwu-engage-link">
+          Tell us about your project
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="wwu-engage-card">
+        <div class="wwu-engage-card-num">03</div>
+        <div class="wwu-engage-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </div>
+        <h3>Code Review &amp; Consultancy</h3>
+        <p>
+          Already have code? We offer structured code reviews, short consultancy engagements,
+          and advice on software design — helping your team improve quality and sustainability
+          without a full collaboration.
+        </p>
+        <a href="/contact/?type=review" class="wwu-engage-link">
+          Request a code review
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+     WHAT WE HELP WITH
+══════════════════════════════════════════════════ -->
+<section class="wwu-services">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">Our Expertise</p>
+      <h2 class="section-title">What We Can Build</h2>
+      <p class="section-desc">
+        We cover a broad range of research software needs across MORU's work in tropical medicine.
+      </p>
+    </div>
+
+    <div class="wwu-services-grid fade-up">
+
+      <div class="wwu-service-item">
+        <div class="wwu-service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+          </svg>
+        </div>
+        <div>
+          <strong>Data Pipelines &amp; ETL</strong>
+          <p>Automated ingestion, cleaning, and transformation of research datasets — from field data to analysis-ready tables.</p>
+        </div>
+      </div>
+
+      <div class="wwu-service-item">
+        <div class="wwu-service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <div>
+          <strong>Web Applications</strong>
+          <p>Interactive dashboards, data exploration tools, and public-facing platforms built for researchers and their audiences.</p>
+        </div>
+      </div>
+
+      <div class="wwu-service-item">
+        <div class="wwu-service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+            <line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+        </div>
+        <div>
+          <strong>Mobile Applications</strong>
+          <p>Field data collection apps, patient-facing tools, and clinical trial support apps for iOS and Android.</p>
+        </div>
+      </div>
+
+      <div class="wwu-service-item">
+        <div class="wwu-service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <div>
+          <strong>Statistical &amp; Analysis Tools</strong>
+          <p>Python and R packages, analysis pipelines, and reproducible workflows for epidemiological and clinical research.</p>
+        </div>
+      </div>
+
+      <div class="wwu-service-item">
+        <div class="wwu-service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div>
+          <strong>Research Reproducibility</strong>
+          <p>Containerisation, version control setup, CI/CD pipelines, and documentation to make your research reproducible.</p>
+        </div>
+      </div>
+
+      <div class="wwu-service-item">
+        <div class="wwu-service-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+          </svg>
+        </div>
+        <div>
+          <strong>API &amp; Systems Integration</strong>
+          <p>Connecting databases, laboratory systems, and external data sources into unified research infrastructure.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+     HOW IT WORKS (PROCESS)
+══════════════════════════════════════════════════ -->
+<section class="wwu-process">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">Our Process</p>
+      <h2 class="section-title">What to Expect</h2>
+      <p class="section-desc">
+        A typical collaboration follows four stages. We keep things lightweight and researcher-friendly throughout.
+      </p>
+    </div>
+
+    <div class="wwu-process-steps fade-up">
+
+      <div class="wwu-step">
+        <div class="wwu-step-line"></div>
+        <div class="wwu-step-dot">1</div>
+        <div class="wwu-step-body">
+          <h3>Initial Conversation</h3>
+          <p>
+            We start with a short meeting to understand your project, your data, and what you need the software to do.
+            No technical knowledge required on your end — just tell us the science.
+          </p>
+        </div>
+      </div>
+
+      <div class="wwu-step">
+        <div class="wwu-step-line"></div>
+        <div class="wwu-step-dot">2</div>
+        <div class="wwu-step-body">
+          <h3>Scoping &amp; Planning</h3>
+          <p>
+            We produce a short scoping document — outlining the proposed approach, technology choices, timeline,
+            and effort required. This becomes the basis of our agreement.
+          </p>
+        </div>
+      </div>
+
+      <div class="wwu-step">
+        <div class="wwu-step-line"></div>
+        <div class="wwu-step-dot">3</div>
+        <div class="wwu-step-body">
+          <h3>Build &amp; Iterate</h3>
+          <p>
+            We develop the software in short cycles, sharing progress regularly and adjusting based on
+            your feedback. You stay involved without needing to attend every technical meeting.
+          </p>
+        </div>
+      </div>
+
+      <div class="wwu-step">
+        <div class="wwu-step-dot">4</div>
+        <div class="wwu-step-body">
+          <h3>Handover &amp; Support</h3>
+          <p>
+            We document everything, run training sessions where needed, and ensure the code lives
+            in a place your team can maintain and build on long after our engagement ends.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════
+     CTA
+══════════════════════════════════════════════════ -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner-inner fade-up">
+      <div class="cta-banner-text">
+        <p class="section-label">Get Started</p>
+        <h2>Not sure where to begin?</h2>
+        <p>Send us a short description of your project and we'll get back to you within a few days to set up a call.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a href="/contact/" class="btn btn-primary">
+          Send us a message
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="/people/" class="btn btn-outline">Meet the Team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
