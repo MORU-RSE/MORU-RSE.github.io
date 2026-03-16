@@ -36,5 +36,19 @@
       <guid>//localhost:1313/projects/test/</guid>
       <description>An advanced simulation tool designed to help manage fisheries by modelling the behaviour of fishing fleets and their interactions with the marine environment.</description>
     </item>
+    <item>
+      <title>Jane Smith</title>
+      <link>//localhost:1313/people/jane-smith/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/people/jane-smith/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tanaphum Wichaita</title>
+      <link>//localhost:1313/people/tanaphum-wichaita/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/people/tanaphum-wichaita/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

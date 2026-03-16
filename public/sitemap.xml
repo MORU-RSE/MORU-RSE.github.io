@@ -61,6 +61,14 @@
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>
+    <loc>//localhost:1313/contact/</loc>
+  </url><url>
+    <loc>//localhost:1313/people/jane-smith/</loc>
+  </url><url>
+    <loc>//localhost:1313/people/</loc>
+  </url><url>
+    <loc>//localhost:1313/people/tanaphum-wichaita/</loc>
+  </url><url>
     <loc>//localhost:1313/work-with-us/</loc>
   </url>
 </urlset>
