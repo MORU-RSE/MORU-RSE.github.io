@@ -3,7 +3,7 @@ title: "EpiModel — Epidemiological Simulation Platform"
 date: 2024-06-01
 category: "Data Platform"
 summary: "An open-access platform for infectious disease modelling, providing researchers with real-time case data and reproducible analysis pipelines."
-image: "/images/projects/epimodel.jpg"
+image: "/images/projects/epimodel.png"
 featured: true
 tags: ["Python", "Data Platform", "Epidemiology"]
 ---

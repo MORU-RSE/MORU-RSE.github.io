@@ -23,11 +23,11 @@
       <description>An open-access platform for infectious disease modelling, providing researchers with real-time case data and reproducible analysis pipelines.</description>
     </item>
     <item>
-      <title>BattSim — Battery Simulation Framework</title>
+      <title>Malaria — Malaria Simulation Framework</title>
       <link>//localhost:1313/projects/other-projects/</link>
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/projects/other-projects/</guid>
-      <description>A framework for writing and solving systems of differential equations, with a library of battery models and specialised tools for simulation experiments.</description>
+      <description>A framework for writing and solving systems of differential equations, with a library of malaria models and specialised tools for simulation experiments.</description>
     </item>
     <item>
       <title>OceanSim — Fisheries Management Tool</title>
