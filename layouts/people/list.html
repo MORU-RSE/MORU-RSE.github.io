@@ -83,7 +83,8 @@
       <div class="people-card">
         <div class="people-card-avatar">
           {{ if .Params.image }}
-          <img src="{{ .Params.image }}" alt="{{ .Title }}">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}"
+          style="object-position: {{ .Params.image_position | default "center top" }}">
           {{ else }}
           <div class="people-card-avatar-placeholder">
             {{ substr .Title 0 1 }}

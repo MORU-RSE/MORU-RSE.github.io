@@ -34,10 +34,10 @@ enableRobotsTXT = true
   url    = "/"
   weight = 1
 
-[[menus.main]]
-  name   = "Work With Us"
-  url    = "/work-with-us/"
-  weight = 2
+#[[menus.main]]
+#  name   = "Work With Us"
+#  url    = "/work-with-us/"
+#  weight = 2
 
 
 [[menus.main]]
@@ -50,10 +50,10 @@ enableRobotsTXT = true
   url    = "/people/"
   weight = 4
 
-[[menus.main]]
-  name   = "Training"
-  url    = "/training/"
-  weight = 5
+#[[menus.main]]
+#  name   = "Training"
+#  url    = "/training/"
+#  weight = 5
 
 [[menus.main]]
   name   = "Contact"

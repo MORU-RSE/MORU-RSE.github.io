@@ -38,10 +38,10 @@
     <loc>//localhost:1313/tags/python/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/projects/other-projects/</loc>
+    <loc>//localhost:1313/tags/hpc/</loc>
     <lastmod>2024-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/hpc/</loc>
+    <loc>//localhost:1313/projects/other-projects/</loc>
     <lastmod>2024-03-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/scientific-computing/</loc>
@@ -63,12 +63,12 @@
   </url><url>
     <loc>//localhost:1313/contact/</loc>
   </url><url>
-    <loc>//localhost:1313/people/jane-smith/</loc>
-  </url><url>
     <loc>//localhost:1313/people/</loc>
+  </url><url>
+    <loc>//localhost:1313/people/sompob-saralamba/</loc>
   </url><url>
     <loc>//localhost:1313/people/tanaphum-wichaita/</loc>
   </url><url>
-    <loc>//localhost:1313/work-with-us/</loc>
+    <loc>//localhost:1313/people/thanakorn-waleejaroenpong/</loc>
   </url>
 </urlset>

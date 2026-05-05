@@ -37,10 +37,10 @@
       <description>An advanced simulation tool designed to help manage fisheries by modelling the behaviour of fishing fleets and their interactions with the marine environment.</description>
     </item>
     <item>
-      <title>Jane Smith</title>
-      <link>//localhost:1313/people/jane-smith/</link>
+      <title>Sompob Saralamba</title>
+      <link>//localhost:1313/people/sompob-saralamba/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/jane-smith/</guid>
+      <guid>//localhost:1313/people/sompob-saralamba/</guid>
       <description></description>
     </item>
     <item>
@@ -48,6 +48,13 @@
       <link>//localhost:1313/people/tanaphum-wichaita/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/people/tanaphum-wichaita/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thanakorn Waleejaroenpong</title>
+      <link>//localhost:1313/people/thanakorn-waleejaroenpong/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/people/thanakorn-waleejaroenpong/</guid>
       <description></description>
     </item>
   </channel>
