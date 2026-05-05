@@ -85,5 +85,54 @@
       <guid>//localhost:1313/tags/marine-science/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Bioinformatics</title>
+      <link>//localhost:1313/tags/bioinformatics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/bioinformatics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Biomedical Research</title>
+      <link>//localhost:1313/tags/biomedical-research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/biomedical-research/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer Program</title>
+      <link>//localhost:1313/tags/computer-program/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/computer-program/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Analysis</title>
+      <link>//localhost:1313/tags/data-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/data-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research Software</title>
+      <link>//localhost:1313/tags/research-software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/research-software/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Species Identification</title>
+      <link>//localhost:1313/tags/species-identification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/species-identification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Taxonomy</title>
+      <link>//localhost:1313/tags/taxonomy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/taxonomy/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

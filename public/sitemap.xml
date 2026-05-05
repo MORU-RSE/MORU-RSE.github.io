@@ -59,15 +59,35 @@
     <loc>//localhost:1313/projects/test/</loc>
     <lastmod>2023-11-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/patents/abiapp/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/bioinformatics/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/biomedical-research/</loc>
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/computer-program/</loc>
   </url><url>
     <loc>//localhost:1313/contact/</loc>
   </url><url>
+    <loc>//localhost:1313/tags/data-analysis/</loc>
+  </url><url>
     <loc>//localhost:1313/people/</loc>
+  </url><url>
+    <loc>//localhost:1313/patents/</loc>
+  </url><url>
+    <loc>//localhost:1313/patents/plasmosight/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/research-software/</loc>
   </url><url>
     <loc>//localhost:1313/people/sompob-saralamba/</loc>
   </url><url>
+    <loc>//localhost:1313/tags/species-identification/</loc>
+  </url><url>
     <loc>//localhost:1313/people/tanaphum-wichaita/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/taxonomy/</loc>
   </url><url>
     <loc>//localhost:1313/people/thanakorn-waleejaroenpong/</loc>
   </url>

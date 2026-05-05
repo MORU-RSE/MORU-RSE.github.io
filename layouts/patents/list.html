@@ -1,0 +1,116 @@
+{{ define "main" }}
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container page-hero-content">
+    <p class="page-hero-breadcrumb"><a href="/">Home</a> / Patents</p>
+    <h1 class="page-hero-title">Patents</h1>
+    <p class="page-hero-desc">
+      Intellectual property developed through our research software engineering work
+      in collaboration with MORU researchers.
+    </p>
+  </div>
+</div>
+
+
+<!-- PATENTS LIST -->
+<section class="patents-section">
+  <div class="container">
+
+    <div class="patents-grid">
+      {{ range .Pages }}
+      <div class="patent-card fade-up">
+
+        <!-- Header -->
+        <div class="patent-card-header">
+          <div class="patent-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <div class="patent-card-meta">
+            {{ with .Params.patent_number }}
+            <span class="patent-number">{{ . }}</span>
+            {{ end }}
+            {{ with .Params.status }}
+            <span class="patent-status patent-status--{{ . | lower | replaceRE " " "-" }}">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div class="patent-card-body">
+          <h2 class="patent-card-title">{{ .Title }}</h2>
+
+          {{ with .Params.inventors }}
+          <p class="patent-card-inventors">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            {{ delimit . ", " }}
+          </p>
+          {{ end }}
+
+          {{ with .Params.filed_date }}
+          <p class="patent-card-date">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Filed: {{ . }}
+          </p>
+          {{ end }}
+
+          <p class="patent-card-desc">{{ .Params.description | default .Summary }}</p>
+
+          {{ with .Params.tags }}
+          <div class="patent-card-tags">
+            {{ range . }}
+            <span class="patent-tag">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- Actions -->
+        <div class="patent-card-actions">
+          {{ with .Params.pdf }}
+          <a href="{{ . }}" target="_blank" rel="noopener" class="btn btn-primary patent-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </a>
+          {{ end }}
+          {{ with .Params.pdf }}
+          <a href="{{ . }}" target="_blank" rel="noopener" class="btn btn-outline patent-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View PDF
+          </a>
+          {{ end }}
+        </div>
+
+        <!-- PDF Preview embed -->
+        {{ with .Params.pdf }}
+        <div class="patent-pdf-preview">
+          <div class="patent-pdf-preview-bar">
+            <span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              PDF Preview
+            </span>
+            <a href="{{ . }}" target="_blank" rel="noopener">Open in new tab ↗</a>
+          </div>
+          <iframe
+            src="{{ . }}#view=FitH&toolbar=0"
+            class="patent-pdf-iframe"
+            title="{{ $.Title }} PDF"
+            loading="lazy"
+          ></iframe>
+        </div>
+        {{ end }}
+
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+
+{{ end }}
