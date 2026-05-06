@@ -41,8 +41,8 @@ enableRobotsTXT = true
 
 
 [[menus.main]]
-  name   = "Projects"
-  url    = "/projects/"
+  name   = "Portfolio"
+  url    = "/portfolio/"
   weight = 3
 
 [[menus.main]]

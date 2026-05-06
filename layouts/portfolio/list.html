@@ -1,0 +1,288 @@
+{{ define "main" }}
+
+{{/* ── Partition content by type ── */}}
+{{ $publications := where .Site.RegularPages ".File.Dir" "portfolio/publication/" }}
+{{ $tools        := where .Site.RegularPages ".File.Dir" "portfolio/tools/" }}
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container page-hero-content">
+    <p class="page-hero-breadcrumb"><a href="/">Home</a> / Portfolio</p>
+    <h1 class="page-hero-title">Portfolio</h1>
+    <p class="page-hero-desc">
+      Publications, software tools, and research outputs from the MORU RSE Group.
+    </p>
+  </div>
+</div>
+
+<!-- PORTFOLIO BODY -->
+<section class="portfolio-section">
+  <div class="container">
+
+    <!-- Tab bar -->
+    <div class="portfolio-tabs" role="tablist" aria-label="Portfolio categories">
+      <button class="portfolio-tab active"
+              role="tab" aria-selected="true"
+              aria-controls="panel-publications"
+              id="tab-publications"
+              data-tab="publications">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+        Publications
+        <span class="portfolio-tab-count">{{ len $publications }}</span>
+      </button>
+
+      <button class="portfolio-tab"
+              role="tab" aria-selected="false"
+              aria-controls="panel-tools"
+              id="tab-tools"
+              data-tab="tools">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="16 18 22 12 16 6"/>
+          <polyline points="8 6 2 12 8 18"/>
+        </svg>
+        Software Tools
+        <span class="portfolio-tab-count">{{ len $tools }}</span>
+      </button>
+    </div>
+
+    <!-- ── PUBLICATIONS PANEL ── -->
+    <div class="portfolio-panel active"
+         id="panel-publications"
+         role="tabpanel"
+         aria-labelledby="tab-publications">
+
+      {{ if $publications }}
+      <div class="pub-list">
+        {{ range (sort $publications ".Date" "desc") }}
+        {{ $p := . }}
+        <article class="pub-card">
+
+          <!-- left accent bar colour by status -->
+          <div class="pub-card-inner">
+            <header class="pub-card-header">
+
+              <!-- Type badge + year -->
+              <div class="pub-card-meta">
+                <span class="pub-badge pub-badge--{{ .Params.pub_type | default "article" | lower | replaceRE " " "-" }}">
+                  {{ .Params.pub_type | default "Article" }}
+                </span>
+                {{ if not .Date.IsZero }}
+                <span class="pub-date">{{ .Date.Format "2006" }}</span>
+                {{ end }}
+                {{ with .Params.journal }}
+                <span class="pub-journal">{{ . }}</span>
+                {{ end }}
+              </div>
+
+              <!-- Title -->
+              <h2 class="pub-title">{{ .Title }}</h2>
+
+              <!-- Authors -->
+              {{ with .Params.authors }}
+              <p class="pub-authors">
+                {{ range $i, $author := . }}
+                  {{ if $i }}, {{ end }}
+
+                  {{ if or 
+                    (eq $author "Sompob Saralamba") 
+                    (eq $author "Tanaphum Wichaita") 
+                    (eq $author "Thanakorn Waleejaroenpong") 
+                  }}
+                    <strong class="pub-author-highlight">{{ $author }}</strong>
+                  {{ else }}
+                    {{ $author }}
+                  {{ end }}
+                {{ end }}
+              </p>
+              {{ end }}
+
+            </header>
+
+            <!-- Abstract (collapsed by default) -->
+            {{ with .Params.abstract }}
+            <div class="pub-abstract-wrap">
+              <div class="pub-abstract">
+                {{ range . }}
+                <p>
+                  <strong>{{ .heading }}:</strong>
+                  {{ .text }}
+                </p>
+                {{ end }}
+              </div>
+            </div>
+            {{ end }}
+
+            <!-- Keywords/Tags -->
+            {{ $keywords := .Params.keywords | default .Params.tags }}
+            {{ with $keywords }}
+            <div class="pub-tags">
+              {{ range . }}
+              <span class="pub-tag">{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ end }}
+
+            <!-- Actions -->
+            <footer class="pub-card-actions">
+              {{ with .Params.doi }}
+              <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener"
+                 class="btn btn-primary pub-action-btn">
+                Read Paper
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              {{ end }}
+              {{ with .Params.pdf }}
+              <a href="{{ . }}" target="_blank" rel="noopener"
+                 class="btn btn-outline pub-action-btn">
+                PDF
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              </a>
+              {{ end }}
+              {{ with .Params.code }}
+              <a href="{{ . }}" target="_blank" rel="noopener"
+                 class="btn btn-outline pub-action-btn">
+                Code
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </a>
+              {{ end }}
+              <!-- Toggle abstract button (JS driven) -->
+              {{ with .Params.abstract }}
+              <button class="pub-abstract-toggle" aria-expanded="false">
+                <span class="toggle-label-show">Show abstract</span>
+                <span class="toggle-label-hide" style="display:none">Hide abstract</span>
+                <svg class="toggle-chevron" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              {{ end }}
+            </footer>
+
+          </div>
+        </article>
+        {{ end }}
+      </div>
+
+      {{ else }}
+      <div class="portfolio-empty">
+        <p>No publications yet — check back soon.</p>
+      </div>
+      {{ end }}
+    </div><!-- /panel-publications -->
+
+
+    <!-- ── SOFTWARE TOOLS PANEL ── -->
+    <div class="portfolio-panel"
+         id="panel-tools"
+         role="tabpanel"
+         aria-labelledby="tab-tools"
+         hidden>
+
+      {{ if $tools }}
+      <div class="tools-grid">
+        {{ range (sort $tools ".Date" "desc") }}
+        <a class="tool-card"
+            href="{{ .Params.app_url | default .Permalink }}"
+            {{ if .Params.app_url }}target="_blank" rel="noopener"{{ end }}>
+
+          <!-- Icon / placeholder -->
+          <div class="tool-card-icon">
+            {{ if .Params.icon }}
+            <img src="{{ .Params.icon }}" alt="{{ .Title }} icon">
+            {{ else }}
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+            {{ end }}
+          </div>
+
+          <div class="tool-card-body">
+            <!-- Status badge -->
+            <div class="tool-card-meta">
+              <span class="tool-badge tool-badge--{{ .Params.status | default "live" | lower }}">
+                {{ .Params.status | default "Live" }}
+              </span>
+              <span class="tool-platform">{{ .Params.platform | default "Web" }}</span>
+            </div>
+
+            <h2 class="tool-card-title">{{ .Title }}</h2>
+            <p class="tool-card-desc">{{ .Params.summary | default .Summary | truncate 140 }}</p>
+
+            <!-- Tags -->
+            {{ with .Params.tags }}
+            <div class="tool-card-tags">
+              {{ range . }}
+              <span class="pub-tag">{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+
+          <!-- External link indicator -->
+          <div class="tool-card-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </div>
+
+        </a>
+        {{ end }}
+      </div>
+
+      {{ else }}
+      <div class="portfolio-empty">
+        <p>No tools listed yet — check back soon.</p>
+      </div>
+      {{ end }}
+
+    </div><!-- /panel-tools -->
+
+  </div>
+</section>
+
+<!-- Tab switching JS (minimal, no dependencies) -->
+<script>
+(function () {
+  const tabs   = document.querySelectorAll('.portfolio-tab');
+  const panels = document.querySelectorAll('.portfolio-panel');
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      const target = tab.dataset.tab;
+
+      tabs.forEach(function (t) {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      panels.forEach(function (p) {
+        p.classList.remove('active');
+        p.hidden = true;
+      });
+
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      var panel = document.getElementById('panel-' + target);
+      if (panel) { panel.classList.add('active'); panel.hidden = false; }
+    });
+  });
+
+  /* Abstract toggle */
+  document.querySelectorAll('.pub-abstract-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var wrap    = btn.closest('.pub-card').querySelector('.pub-abstract-wrap');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      btn.querySelector('.toggle-label-show').style.display = expanded ? '' : 'none';
+      btn.querySelector('.toggle-label-hide').style.display = expanded ? 'none' : '';
+      btn.querySelector('.toggle-chevron').style.transform  = expanded ? '' : 'rotate(180deg)';
+      wrap.classList.toggle('open', !expanded);
+    });
+  });
+})();
+</script>
+
+{{ end }}

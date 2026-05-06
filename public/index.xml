@@ -16,11 +16,18 @@
       <description>Reproducible research software isn&amp;rsquo;t just good practice — it&amp;rsquo;s increasingly a requirement for publication. Here&amp;rsquo;s how we approach it.</description>
     </item>
     <item>
-      <title>Identify Artemisinin Resistance — Parasite Clearance Half-Life Analysis Tool</title>
-      <link>//localhost:1313/projects/identify-artemisinin-resistance/</link>
-      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/identify-artemisinin-resistance/</guid>
-      <description>An interactive Shiny application for exploring artemisinin resistance using parasite clearance half-life data, helping researchers examine how sensitive and resistant parasite populations may be identified from clearance patterns.</description>
+      <title>Antibacterial and Proteomic Profiling of Morus alba Extract Against Methicillin-Resistant Staphylococcus aureus</title>
+      <link>//localhost:1313/portfolio/publication/antibacterial_and_proteomic_profiling/</link>
+      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/antibacterial_and_proteomic_profiling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MalariaDosingCalc</title>
+      <link>//localhost:1313/portfolio/tools/template-for-adding-tools/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/template-for-adding-tools/</guid>
+      <description>An interactive Shiny app for calculating weight-based antimalarial drug doses for paediatric and adult patients in clinical settings. Supports artesunate, artemether-lumefantrine, and primaquine dosing schedules.</description>
     </item>
     <item>
       <title>ABlapp — Applying Taxonomic Boundaries for Species Identification</title>

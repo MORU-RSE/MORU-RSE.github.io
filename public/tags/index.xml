@@ -30,38 +30,45 @@
       <description></description>
     </item>
     <item>
-      <title>Artemisinin Resistance</title>
-      <link>//localhost:1313/tags/artemisinin-resistance/</link>
-      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/artemisinin-resistance/</guid>
+      <title>Clinical-Tool</title>
+      <link>//localhost:1313/tags/clinical-tool/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/clinical-tool/</guid>
       <description></description>
     </item>
     <item>
       <title>Malaria</title>
       <link>//localhost:1313/tags/malaria/</link>
-      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/malaria/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Modelling</title>
-      <link>//localhost:1313/tags/modelling/</link>
-      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/modelling/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
       <link>//localhost:1313/tags/r/</link>
-      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/r/</guid>
       <description></description>
     </item>
     <item>
       <title>Shiny</title>
       <link>//localhost:1313/tags/shiny/</link>
-      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/shiny/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Antibacterial</title>
+      <link>//localhost:1313/tags/antibacterial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/antibacterial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Antimicrobial Resistance</title>
+      <link>//localhost:1313/tags/antimicrobial-resistance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/antimicrobial-resistance/</guid>
       <description></description>
     </item>
     <item>
@@ -90,6 +97,41 @@
       <link>//localhost:1313/tags/data-analysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/data-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Morus Alba</title>
+      <link>//localhost:1313/tags/morus-alba/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/morus-alba/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MRSA</title>
+      <link>//localhost:1313/tags/mrsa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/mrsa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NONMEM</title>
+      <link>//localhost:1313/tags/nonmem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/nonmem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pharmacokinetics</title>
+      <link>//localhost:1313/tags/pharmacokinetics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/pharmacokinetics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proteomics</title>
+      <link>//localhost:1313/tags/proteomics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/proteomics/</guid>
       <description></description>
     </item>
     <item>
