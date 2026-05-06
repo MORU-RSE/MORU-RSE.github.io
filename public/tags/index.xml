@@ -30,59 +30,38 @@
       <description></description>
     </item>
     <item>
-      <title>Data Platform</title>
-      <link>//localhost:1313/tags/data-platform/</link>
+      <title>Artemisinin Resistance</title>
+      <link>//localhost:1313/tags/artemisinin-resistance/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/data-platform/</guid>
+      <guid>//localhost:1313/tags/artemisinin-resistance/</guid>
       <description></description>
     </item>
     <item>
-      <title>Epidemiology</title>
-      <link>//localhost:1313/tags/epidemiology/</link>
+      <title>Malaria</title>
+      <link>//localhost:1313/tags/malaria/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/epidemiology/</guid>
+      <guid>//localhost:1313/tags/malaria/</guid>
       <description></description>
     </item>
     <item>
-      <title>Python</title>
-      <link>//localhost:1313/tags/python/</link>
+      <title>Modelling</title>
+      <link>//localhost:1313/tags/modelling/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/python/</guid>
+      <guid>//localhost:1313/tags/modelling/</guid>
       <description></description>
     </item>
     <item>
-      <title>HPC</title>
-      <link>//localhost:1313/tags/hpc/</link>
-      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/hpc/</guid>
+      <title>R</title>
+      <link>//localhost:1313/tags/r/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/r/</guid>
       <description></description>
     </item>
     <item>
-      <title>Scientific Computing</title>
-      <link>//localhost:1313/tags/scientific-computing/</link>
-      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/scientific-computing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Agent-Based Modelling</title>
-      <link>//localhost:1313/tags/agent-based-modelling/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/agent-based-modelling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Java</title>
-      <link>//localhost:1313/tags/java/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/java/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Marine Science</title>
-      <link>//localhost:1313/tags/marine-science/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/marine-science/</guid>
+      <title>Shiny</title>
+      <link>//localhost:1313/tags/shiny/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/shiny/</guid>
       <description></description>
     </item>
     <item>

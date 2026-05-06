@@ -23,41 +23,26 @@
     <loc>//localhost:1313/posts/reproducibility/</loc>
     <lastmod>2026-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/data-platform/</loc>
+    <loc>//localhost:1313/tags/artemisinin-resistance/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/epidemiology/</loc>
+    <loc>//localhost:1313/projects/identify-artemisinin-resistance/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/projects/epimodel/</loc>
+    <loc>//localhost:1313/tags/malaria/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/modelling/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/projects/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/python/</loc>
+    <loc>//localhost:1313/tags/r/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/hpc/</loc>
-    <lastmod>2024-03-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/projects/other-projects/</loc>
-    <lastmod>2024-03-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/scientific-computing/</loc>
-    <lastmod>2024-03-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/agent-based-modelling/</loc>
-    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/java/</loc>
-    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/marine-science/</loc>
-    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/projects/test/</loc>
-    <lastmod>2023-11-10T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/tags/shiny/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/patents/abiapp/</loc>
   </url><url>

@@ -16,25 +16,11 @@
       <description>Reproducible research software isn&amp;rsquo;t just good practice — it&amp;rsquo;s increasingly a requirement for publication. Here&amp;rsquo;s how we approach it.</description>
     </item>
     <item>
-      <title>EpiModel — Epidemiological Simulation Platform</title>
-      <link>//localhost:1313/projects/epimodel/</link>
+      <title>Identify Artemisinin Resistance — Parasite Clearance Half-Life Analysis Tool</title>
+      <link>//localhost:1313/projects/identify-artemisinin-resistance/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/epimodel/</guid>
-      <description>An open-access platform for infectious disease modelling, providing researchers with real-time case data and reproducible analysis pipelines.</description>
-    </item>
-    <item>
-      <title>Malaria — Malaria Simulation Framework</title>
-      <link>//localhost:1313/projects/other-projects/</link>
-      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/other-projects/</guid>
-      <description>A framework for writing and solving systems of differential equations, with a library of malaria models and specialised tools for simulation experiments.</description>
-    </item>
-    <item>
-      <title>OceanSim — Fisheries Management Tool</title>
-      <link>//localhost:1313/projects/test/</link>
-      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/test/</guid>
-      <description>An advanced simulation tool designed to help manage fisheries by modelling the behaviour of fishing fleets and their interactions with the marine environment.</description>
+      <guid>//localhost:1313/projects/identify-artemisinin-resistance/</guid>
+      <description>An interactive Shiny application for exploring artemisinin resistance using parasite clearance half-life data, helping researchers examine how sensitive and resistant parasite populations may be identified from clearance patterns.</description>
     </item>
     <item>
       <title>ABlapp — Applying Taxonomic Boundaries for Species Identification</title>
