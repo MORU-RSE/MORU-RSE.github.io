@@ -8,4 +8,5 @@ email: "sompob@tropmedres.ac"
 github: "https://github.com/slphyx"
 linkedin: "https://th.linkedin.com/in/saralamba"
 orcid: "https://orcid.org/0000-0002-5460-8447"
+research_profile: "https://www.tropicalmedicine.ox.ac.uk/team/sompob-saralamba"
 ---
