@@ -163,6 +163,7 @@
 
 
 <!-- TEAM PREVIEW -->
+<!-- TEAM PREVIEW -->
 {{ $people := where .Site.RegularPages "Section" "people" }}
 {{ if $people }}
 <section class="team-section">
@@ -175,9 +176,18 @@
       </div>
       <a href="/people/" class="btn btn-outline">View All</a>
     </div>
+
     <div class="team-grid">
       {{ range first 4 $people }}
-      <a class="team-card" href="{{ .Permalink }}">
+
+      {{ $profileLink := .Permalink }}
+      {{ if .Params.research_profile }}
+        {{ $profileLink = .Params.research_profile }}
+      {{ else if .Params.linkedin }}
+        {{ $profileLink = .Params.linkedin }}
+      {{ end }}
+
+      <a class="team-card" href="{{ $profileLink }}" {{ if or .Params.research_profile .Params.linkedin }}target="_blank" rel="noopener"{{ end }}>
         <div class="team-card-avatar">
           {{ if .Params.image }}
           <img src="{{ .Params.image }}" alt="{{ .Title }}">
