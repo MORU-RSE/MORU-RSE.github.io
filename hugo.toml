@@ -1,9 +1,10 @@
 baseURL       = "https://moru-rse.github.io/MORU_RSE_Page/"
 languageCode  = "en-gb"
 title         = "RSE Group"
+enableRobotsTXT = true
+
 [pagination]
 pagerSize = 10
-enableRobotsTXT = true
 
 [params]
   shortName   = "MORU RSE Group"

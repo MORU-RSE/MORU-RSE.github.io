@@ -16,18 +16,20 @@
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="{{ "images/favicon.svg" | relURL }}">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 
   <!-- Custom head from site params -->
   {{ with .Site.Params.customCSS }}
-    {{ range . }}<link rel="stylesheet" href="{{ . }}">{{ end }}
+    {{ range . }}
+      <link rel="stylesheet" href="{{ . | relURL }}">
+    {{ end }}
   {{ end }}
 </head>
-<body>
 
+<body>
   {{- partial "header.html" . -}}
 
   <main id="main-content">
@@ -37,6 +39,6 @@
   {{- partial "footer.html" . -}}
 
   <!-- JS -->
-  <script src="/js/main.js" defer></script>
+  <script src="{{ "js/main.js" | relURL }}" defer></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
   <div class="container nav-inner">
 
     <!-- Logo -->
-    <a href="/" class="nav-logo">
+    <a href="{{ "/" | relURL }}" class="nav-logo">
       <!-- <div class="nav-logo-mark">RSE</div> -->
       <div class="nav-logo-text">
         <strong>{{ .Site.Params.shortName | default .Site.Title }}</strong>
@@ -13,9 +13,10 @@
     <!-- Links -->
     <ul class="nav-links">
       {{ range .Site.Menus.main }}
+      {{ $menuURL := .URL | relURL }}
       <li>
-        <a href="{{ .URL }}"
-           {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>
+        <a href="{{ $menuURL }}"
+           {{ if eq $.RelPermalink $menuURL }}class="active"{{ end }}>
           {{ .Name }}
         </a>
       </li>
