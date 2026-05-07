@@ -161,8 +161,6 @@
   </div>
 </section>
 
-
-<!-- TEAM PREVIEW -->
 <!-- TEAM PREVIEW -->
 {{ $people := where .Site.RegularPages "Section" "people" }}
 {{ if $people }}
@@ -206,40 +204,92 @@
 </section>
 {{ end }}
 
-
-<!-- PROJECTS (only renders if content exists) -->
-{{ $projects := where .Site.RegularPages "Section" "projects" }}
-{{ if $projects }}
-<section class="projects-section">
+<!-- RECENT PUBLICATIONS -->
+{{ $publications := where .Site.RegularPages ".File.Dir" "portfolio/publication/" }}
+{{ if $publications }}
+<section class="pub-preview-section">
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-header-left">
-        <p class="section-label">Our Work</p>
-        <h2 class="section-title">Projects</h2>
-        <p class="section-desc">Early projects that show what we can do — more to come.</p>
+        <p class="section-label">Latest Research</p>
+        <h2 class="section-title">Recent Publications</h2>
+        <p class="section-desc">Peer-reviewed work and preprints from the MORU RSE Group.</p>
       </div>
-      <a href="/projects/" class="btn btn-outline">All Projects</a>
+      <a href="/portfolio/" class="btn btn-outline">View All</a>
     </div>
-    <div class="projects-grid">
-      {{ $featured := first 3 (where $projects ".Params.featured" true) }}
-      {{ if not $featured }}{{ $featured = first 3 $projects }}{{ end }}
-      {{ range $featured }}
-      <a class="project-card" href="{{ .Permalink }}">
-        <div class="project-card-bg" style="background-image: url('{{ .Params.image | default "/images/project-default.jpg" }}')"></div>
-        <div class="project-card-overlay"></div>
-        <div class="project-card-content">
-          <p class="project-card-tag">{{ .Params.category | default "Project" }}</p>
-          <h3 class="project-card-title">{{ .Title }}</h3>
-          <p class="project-card-desc">{{ .Params.summary | default .Summary }}</p>
+
+    <div class="pub-list">
+      {{ range first 3 (sort $publications ".Date" "desc") }}
+      <article class="pub-card">
+        <div class="pub-card-inner">
+          <header class="pub-card-header">
+
+            <div class="pub-card-meta">
+              <span class="pub-badge pub-badge--{{ .Params.pub_type | default "article" | lower | replaceRE " " "-" }}">
+                {{ .Params.pub_type | default "Article" }}
+              </span>
+              {{ if not .Date.IsZero }}
+              <span class="pub-date">{{ .Date.Format "2006" }}</span>
+              {{ end }}
+              {{ with .Params.journal }}
+              <span class="pub-journal">{{ . }}</span>
+              {{ end }}
+            </div>
+
+            <h2 class="pub-title">{{ .Title }}</h2>
+
+            {{ with .Params.authors }}
+            <p class="pub-authors">
+              {{ range $i, $author := . }}
+                {{ if $i }}, {{ end }}
+                {{ if or
+                  (eq $author "Sompob Saralamba")
+                  (eq $author "Tanaphum Wichaita")
+                  (eq $author "Thanakorn Waleejaroenpong")
+                }}
+                  <strong class="pub-author-highlight">{{ $author }}</strong>
+                {{ else }}
+                  {{ $author }}
+                {{ end }}
+              {{ end }}
+            </p>
+            {{ end }}
+
+          </header>
+
+          <footer class="pub-card-actions">
+            {{ with .Params.doi }}
+            <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener"
+               class="btn btn-primary pub-action-btn">
+              Read Paper
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            {{ end }}
+            {{ with .Params.pdf }}
+            <a href="{{ . }}" target="_blank" rel="noopener"
+               class="btn btn-outline pub-action-btn">
+              PDF
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+            {{ end }}
+          </footer>
+
         </div>
-        <div class="project-card-arrow">&#8594;</div>
-      </a>
+      </article>
       {{ end }}
     </div>
+
+    <!-- See all link at bottom -->
+    <div class="pub-preview-footer">
+      <a href="/portfolio/" class="btn btn-outline">
+        See all publications & tools
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
   </div>
 </section>
 {{ end }}
-
 
 <!-- CTA BANNER — light version -->
 <section class="cta-banner">

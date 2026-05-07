@@ -493,6 +493,21 @@ ul { list-style: none; }
   color: var(--text-muted);
 }
 
+/* ══════════════════════════════════════════════════
+   HOME — PUBLICATIONS PREVIEW
+══════════════════════════════════════════════════ */
+.pub-preview-section {
+  padding: 5rem 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.pub-preview-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 /* ── Projects Section ──────────────────────────────────────── */
 .projects-section {
   padding: 5rem 0;
