@@ -6,7 +6,6 @@
     <description>Recent content in Home on RSE Group</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 15 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Reproducibility Matters in Research Software</title>
@@ -23,11 +22,214 @@
       <description></description>
     </item>
     <item>
-      <title>MalariaDosingCalc</title>
-      <link>//localhost:1313/portfolio/tools/template-for-adding-tools/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/portfolio/tools/template-for-adding-tools/</guid>
-      <description>An interactive Shiny app for calculating weight-based antimalarial drug doses for paediatric and adult patients in clinical settings. Supports artesunate, artemether-lumefantrine, and primaquine dosing schedules.</description>
+      <title>Influence of Context on Engagement with COVID-19 Testing: A Scoping Review of Barriers and Facilitators to Testing for Healthcare Workers, Care Homes and Schools in the UK</title>
+      <link>//localhost:1313/portfolio/publication/influence_of_context_on_engagement_with_covid-19/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/influence_of_context_on_engagement_with_covid-19/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mass testing for discovery and control of COVID-19 outbreaks in adult social care: an observational study and cost-effectiveness analysis of 14 805 care homes in England</title>
+      <link>//localhost:1313/portfolio/publication/mass_testing_for_discovery_and_control_of_covid-19_outbreaks/</link>
+      <pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/mass_testing_for_discovery_and_control_of_covid-19_outbreaks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Validating a web application’s use of genetic distance to determine helminth species boundaries and aid in identification</title>
+      <link>//localhost:1313/portfolio/publication/validating_a_web_application/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/validating_a_web_application/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>COVID-19 testing and reporting behaviours in England across different sociodemographic groups: a population-based study using testing data and data from community prevalence surveillance surveys</title>
+      <link>//localhost:1313/portfolio/publication/covid-19_testing_and_reporting_behaviours_in_england/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/covid-19_testing_and_reporting_behaviours_in_england/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Population and transmission dynamics model to determine WHO targets for eliminating Hepatitis C virus in Thailand</title>
+      <link>//localhost:1313/portfolio/publication/population_and_transmission_dynamics_model_to_determine_who_targets/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/population_and_transmission_dynamics_model_to_determine_who_targets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exploring the antimicrobial potential of crude peptide extracts from Allium sativum and Allium oschaninii against antibiotic-resistant bacterial strains</title>
+      <link>//localhost:1313/portfolio/publication/exploring_the_antimicrobial_potential_of_crude_peptide_extracts/</link>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/exploring_the_antimicrobial_potential_of_crude_peptide_extracts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Decision to self-isolate during the COVID-19 pandemic in the UK: a rapid scoping review</title>
+      <link>//localhost:1313/portfolio/publication/decision_to_self-isolate_during_the_covid-19_pandemic_in_the_uk/</link>
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/decision_to_self-isolate_during_the_covid-19_pandemic_in_the_uk/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>An artesunate pharmacometric model to explain therapeutic responses in falciparum malaria—authors’ response</title>
+      <link>//localhost:1313/portfolio/publication/an_artesunate_pharmacometric_model/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/an_artesunate_pharmacometric_model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Early warning systems for malaria outbreaks in Thailand: an anomaly detection approach</title>
+      <link>//localhost:1313/portfolio/publication/early_waning_system_for_malaria_outbreaks_in_thailand/</link>
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/early_waning_system_for_malaria_outbreaks_in_thailand/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A web-based mathematical modelling tool to support Plasmodium falciparum malaria elimination strategy design</title>
+      <link>//localhost:1313/portfolio/tools/mda-eff/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/mda-eff/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Applying taxonomic Boundaries for species Identification</title>
+      <link>//localhost:1313/portfolio/tools/abi/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/abi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cambodia Malaria Outbreak Detection Tool</title>
+      <link>//localhost:1313/portfolio/tools/cambodia-malaria-outbreak-detection-tool/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/cambodia-malaria-outbreak-detection-tool/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cost-Effectiveness of G6PD Screening</title>
+      <link>//localhost:1313/portfolio/tools/cost-effectiveness-g6pd-screening/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/cost-effectiveness-g6pd-screening/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Economic Cost of AMR</title>
+      <link>//localhost:1313/portfolio/tools/economic-cost-of-amr/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/economic-cost-of-amr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Estimation of gestational age from fundal height</title>
+      <link>//localhost:1313/portfolio/tools/gestational-age-from-fundal-height/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/gestational-age-from-fundal-height/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hat Game: A Simple SIR model</title>
+      <link>//localhost:1313/portfolio/tools/hat-game-simple-sir-model/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/hat-game-simple-sir-model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HEV vaccination policy evaluation tool</title>
+      <link>//localhost:1313/portfolio/tools/hev-vaccination-policy-evaluation-tool/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/hev-vaccination-policy-evaluation-tool/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Identify artemisinin resistance</title>
+      <link>//localhost:1313/portfolio/tools/identify-artemisinin-resistance/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/identify-artemisinin-resistance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LOMWRU AMR Dashboard</title>
+      <link>//localhost:1313/portfolio/tools/lomwru-amr-dashboard/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/lomwru-amr-dashboard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>maemod R package</title>
+      <link>//localhost:1313/portfolio/tools/maemod-r-package/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/maemod-r-package/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Malaria Elimination on the web</title>
+      <link>//localhost:1313/portfolio/tools/malaria-elimination-on-the-web/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/malaria-elimination-on-the-web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MARC Malaria Data Repository</title>
+      <link>//localhost:1313/portfolio/tools/marc-malaria-data-repository/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/marc-malaria-data-repository/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>METCAP: Malaria Elimination Transmission and Costing in the Asia-Pacific</title>
+      <link>//localhost:1313/portfolio/tools/metcap/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/metcap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modelling optimal strategies to screen and treat chronic Hepatitis C Virus infections</title>
+      <link>//localhost:1313/portfolio/tools/webhepc/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/webhepc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>P. falciparum Dynamic models</title>
+      <link>//localhost:1313/portfolio/tools/p-falciparum-dynamic-models/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/p-falciparum-dynamic-models/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RandomApp</title>
+      <link>//localhost:1313/portfolio/tools/randomapp/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/randomapp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SEGmented Regression for Interrupted Time Series (SEGRITS)</title>
+      <link>//localhost:1313/portfolio/tools/segrits/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/segrits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Utility for Randomforest predicting resistance</title>
+      <link>//localhost:1313/portfolio/tools/randomforest-predicting-resistance/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/tools/randomforest-predicting-resistance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>An artesunate pharmacometric model to explain therapeutic responses in falciparum malaria</title>
+      <link>//localhost:1313/portfolio/publication/an-artesunate_pharmacometric_model/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/an-artesunate_pharmacometric_model/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How to model the impact of vaccines for policymaking when the characteristics are uncertain: A case study in Thailand prior to the vaccine rollout during the COVID-19 pandemic</title>
+      <link>//localhost:1313/portfolio/publication/how_to_model_the_impact_of_vaccines_for_policymaking/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/portfolio/publication/how_to_model_the_impact_of_vaccines_for_policymaking/</guid>
+      <description></description>
     </item>
     <item>
       <title>ABlapp — Applying Taxonomic Boundaries for Species Identification</title>

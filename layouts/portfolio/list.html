@@ -181,9 +181,7 @@
       {{ if $tools }}
       <div class="tools-grid">
         {{ range (sort $tools ".Date" "desc") }}
-        <a class="tool-card"
-            href="{{ .Params.app_url | default .Permalink }}"
-            {{ if .Params.app_url }}target="_blank" rel="noopener"{{ end }}>
+        <article class="tool-card">
 
           <!-- Icon / placeholder -->
           <div class="tool-card-icon">
@@ -217,18 +215,35 @@
               {{ end }}
             </div>
             {{ end }}
+
+            <!-- Actions -->
+            <footer class="tool-card-actions">
+              {{ with .Params.app_url }}
+              <a href="{{ . }}" target="_blank" rel="noopener"
+                class="btn btn-primary tool-action-btn">
+                Open Tool
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+              {{ end }}
+
+              {{ with .Params.code }}
+              <a href="{{ . }}" target="_blank" rel="noopener"
+                class="btn btn-outline tool-action-btn">
+                Code
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </a>
+              {{ end }}
+            </footer>
           </div>
 
-          <!-- External link indicator -->
-          <div class="tool-card-arrow">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </div>
-
-        </a>
+        </article>
         {{ end }}
       </div>
 
