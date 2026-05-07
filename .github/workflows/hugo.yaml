@@ -41,7 +41,7 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        run: hugo --gc --minify --baseURL "https://moru-rse.github.io/MORU_RSE_Page/"
+        run: hugo --gc --minify --baseURL "https://moru-rse.github.io/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

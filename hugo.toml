@@ -1,4 +1,4 @@
-baseURL       = "https://moru-rse.github.io/MORU_RSE_Page/"
+baseURL       = "https://moru-rse.github.io/"
 languageCode  = "en-gb"
 title         = "RSE Group"
 enableRobotsTXT = true
