@@ -23,7 +23,7 @@
 
       <div class="people-lead-avatar">
         {{ if .Params.image }}
-        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
         {{ else }}
         <div class="people-lead-avatar-placeholder">
           {{ substr .Title 0 1 }}
@@ -93,7 +93,7 @@
       <div class="people-card">
         <div class="people-card-avatar">
           {{ if .Params.image }}
-          <img src="{{ .Params.image }}" alt="{{ .Title }}"
+          <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}"
           style="object-position: {{ .Params.image_position | default "center top" }}">
           {{ else }}
           <div class="people-card-avatar-placeholder">
