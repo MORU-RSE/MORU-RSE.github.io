@@ -2,15 +2,15 @@
   <div class="container">
     <div class="footer-grid">
 
-      <!-- Brand -->
+      <!-- footer brand -->
       <div class="footer-brand">
         <div class="footer-brand-logo">
-          <!-- <div class="nav-logo-mark">RSE</div> -->
-          <div class="nav-logo-text">
-            <strong style="color:white">{{ .Site.Params.shortName | default .Site.Title }}</strong>
-          </div>
+          <strong style="color:white">{{ .Site.Params.shortName | default .Site.Title }}</strong>
         </div>
-        <p>{{ .Site.Params.footerDesc | default "We partner with researchers to build robust, maintainable, and reproducible research software." }}</p>
+        {{ with .Site.Params.motto }}
+        <p class="footer-motto">{{ . }}</p>
+        {{ end }}
+        <p>{{ .Site.Params.footerDesc }}</p>
       </div>
 
       <!-- Navigation -->

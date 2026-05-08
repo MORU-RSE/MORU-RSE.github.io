@@ -4,10 +4,11 @@
     <!-- Logo -->
     <a href="{{ "/" | relURL }}" class="nav-logo">
       <!-- <div class="nav-logo-mark">RSE</div> -->
-      <div class="nav-logo-text">
-        <strong>{{ .Site.Params.shortName | default .Site.Title }}</strong>
-        <span>{{ .Site.Params.navSubtitle | default "Research Software Engineering" }}</span>
-      </div>
+       <img
+        src="{{ "/images/MORU_RSE_LOGO_nav.png" | relURL }}"
+        alt="{{ .Site.Params.shortName | default .Site.Title }}"
+        class="nav-logo-img"
+      >
     </a>
 
     <!-- Links -->

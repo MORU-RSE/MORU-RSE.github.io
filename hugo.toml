@@ -10,7 +10,8 @@ pagerSize = 10
   shortName   = "MORU RSE Group"
   navSubtitle = "Research Software Engineering"
   description = "We partner with researchers to build robust, maintainable, and reproducible research software."
-  footerDesc  = "We partner with researchers to build robust, maintainable, and reproducible research software."
+  # footerDesc  = "We partner with researchers to build robust, maintainable, and reproducible research software."
+  motto = "Making MORU researchers press fewer buttons!"
 
   # Social links
   github   = "https://github.com/MORU-RSE"

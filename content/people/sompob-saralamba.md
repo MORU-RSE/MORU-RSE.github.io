@@ -1,9 +1,9 @@
 ---
 title: "Sompob Saralamba"
-role: "Head of Research Software Engineer"
+role: "Head of Research Software Engineering"
 lead: true
 image: "/images/people/sompob-saralamba.webp"
-bio: "As Head of Research Software Engineer at MORU, Sompob focuses on translating complex mathematical and infectious disease models into accessible, practical tools for researchers, clinicians, and policymakers. His expertise spans scientific software development, mathematical modelling, interactive dashboards, and AI-based analytical tools that support data-driven decision-making in tropical medicine research."
+bio: "As Head of Research Software Engineering at MORU, Sompob focuses on translating complex mathematical and infectious disease models into accessible, practical tools for researchers, clinicians, and policymakers. His expertise spans scientific software development, mathematical modelling, interactive dashboards, and AI-based analytical tools that support data-driven decision-making in tropical medicine research."
 email: "sompob@tropmedres.ac"
 github: "https://github.com/slphyx"
 linkedin: "https://th.linkedin.com/in/saralamba"
